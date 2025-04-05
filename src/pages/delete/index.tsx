@@ -1,13 +1,12 @@
-import Link from "next/link"
+import {Background} from "../../background/Background";
+import {Section} from "../../layout/Section";
+import {NavbarTwoColumns} from "../../navigation/NavbarTwoColumns";
+import {Logo} from "../../templates/Logo";
+import Link from "next/link";
+import {HeroOneButton} from "../../hero/HeroOneButton";
+import {Button} from "../../button/Button";
 
-import { Background } from "../background/Background"
-import { Button } from "../button/Button"
-import { HeroOneButton } from "../hero/HeroOneButton"
-import { Section } from "../layout/Section"
-import { NavbarTwoColumns } from "../navigation/NavbarTwoColumns"
-import { Logo } from "./Logo"
-
-const Hero = () => (
+const Delete = () => (
     <Background color="bg-gray-100">
         <Section yPadding="py-6">
             <NavbarTwoColumns logo={<Logo xl />}>
@@ -23,15 +22,15 @@ const Hero = () => (
             <HeroOneButton
                 title={
                     <>
-                        {"The modern social media for\n"}
-                        <span className="text-primary-500">Anonymous User</span>
+                        {"Remove account, Please send email to\n"}
+                        <span className="text-primary-500">hello@suntuk.xyz</span>
                     </>
                 }
-                description="Download Suntuk on Google Playstore."
+                description=""
                 button={
-                    <Link href="https://play.google.com/store/apps/details?id=com.bld.suntuk">
+                    <Link href="mailto:hello@suntuk.xyz?subject=Delete%20Account">
                         <a>
-                            <Button xl>Download</Button>
+                            <Button xl>Delete Account</Button>
                         </a>
                     </Link>
                 }
@@ -40,4 +39,4 @@ const Hero = () => (
     </Background>
 )
 
-export { Hero }
+export default Delete

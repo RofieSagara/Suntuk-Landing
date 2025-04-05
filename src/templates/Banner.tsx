@@ -7,10 +7,10 @@ import { Section } from "../layout/Section"
 const Banner = () => (
     <Section>
         <CTABanner
-            title="Download Suntuk sekarang di Playstore"
+            title="Suntuk now on Google Playstore"
             subtitle="Download Now"
             button={
-                <Link href="https://play.google.com/store/apps/details?id=com.indev.suntuk">
+                <Link href="https://play.google.com/store/apps/details?id=com.bld.suntuk">
                     <a>
                         <Button>Download</Button>
                     </a>

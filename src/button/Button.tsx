@@ -38,6 +38,9 @@ const Button = (props: IButtonProps) => {
           .btn-primary:hover {
             @apply bg-primary-600;
           }
+          .background {
+            @apply bg-primary-500;
+          }
         `}
       </style>
     </div>
